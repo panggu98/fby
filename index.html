@@ -1,0 +1,94 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0018)https://dizhi.wtf/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="Keywords" content="黄色,成人视频,午夜影院,日韩,偷拍,黄播,91视频,日本AV,乱伦" />
+        <meta name="Description" content="全网最全的成人视频" />
+  <title>最新地址发布页</title>
+  <style type="text/css">
+    <!--
+    .abc {
+      font-size: 14px
+    }
+
+    .def {
+      font-size: 30px;
+      color: #CD0000;
+      font-weight: bold;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #32CD32;
+    }
+    -->
+    .domain {
+    padding-left:
+    15px;
+    ;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+</head>
+
+<body oncontextmenu="return false">
+
+  <br>
+  <table cellspacing="0" cellpadding="0" align="center">
+
+    <tbody>
+
+      <tr>
+        <td height="70" align="middle">
+          <h3>永久网址发布页，CTRL+D可收藏本地址</h3>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#00CD00" height="3"></td>
+      </tr>
+      <tr>
+        <td height="80" style="font-weight: 600;" id="domain_list">
+          <p id="loading" style="font-weight: 400;">正在加载中... 请稍后！</p>
+        </td>
+      </tr>
+      <tr>
+        <td bgcolor="#00CD00" height="3"></td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+
+    $(function () {
+      $.ajax({
+        url: "https://open.9hmo.com/wFx3FFG0/domain_list/138",
+        dataType: "json",
+        type: "get",
+        success: function (data) {
+          $("#loading").hide();
+          var list = data.data;
+          if (list && list.length > 0) {
+            $.each(list, function (index, value) {
+              $("#domain_list").append("<p><span class='abc'>最新地址" + (index + 1) + " ：<a class='domain' href='http://" + value + "' target='_blank'>" + value + "</a></span></p>");
+            })
+          } else {
+            alert("暂没有最新地址，敬请期待！");
+          }
+        },
+        error: function (data) {
+          alert("获取最新地址出错，请稍后刷新重试！");
+        }
+      })
+    })
+
+  </script>
+</body>
+
+</html>
